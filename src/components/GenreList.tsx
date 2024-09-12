@@ -19,8 +19,11 @@ interface Props {
 const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
   const { data, isLoading, error } = useGenres();
 
-  if (error) return null;
-  if (isLoading) return <Spinner size="md" />;
+  // if (error) return null;
+  // if (isLoading) return <Spinner size="md" />;
+
+  // Wenn Genre nicht mehr staitsch geladen wird kann man diese Zeilen wieder unkommentieren!
+
   return (
     <>
       <Heading fontSize="2xl" marginBottom={3}>
